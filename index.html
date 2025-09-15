@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+   
+
+    <div class="redes-sociais">
+      <a href="https://wa.me/5521986140005" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/tony-s-freitas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sammyfreitas" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://discord.com/channels/999307907160088607/999307907160088609" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="https://www.facebook.com/anthonyfreitas78" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/anthony_tijuduke/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <h1>Conversor de Moedas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://sammyfreitas.github.io/portfolioSite/">Portfólio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Marquee com cotações -->
+    <section class="cotacoes">
+      <div id="ticker-container">
+        <div id="ticker-marquee"></div>
+
+      </div>
+    </section>
+
+    <!-- Conversor -->
+    <section class="conversor">
+      <h2>Faça sua Conversão</h2>
+      <div class="converter-box">
+        <input type="number" id="valor" placeholder="Digite o valor" /><br>
+
+        <select id="moedaDe"></select>
+        <span>➡</span>
+        <select id="moedaPara"></select><br>
+
+        <button onclick="converter()">Converter</button>
+      </div>
+      <p id="resultado"></p>
+    </section>
+
+    
+
+
+    <section class="noticias">
+      <h2>Últimas Notícias do InfoMoney</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div id="carousel" class="carousel">
+          <!-- Notícias serão carregadas aqui -->
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
+
+    <!-- Seção Serviços -->
+    <section class="services-container">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li>
+          <i class="fas fa-exchange-alt"></i>
+          <h3>Conversão Instantânea</h3>
+          <p>
+            Converta moedas em tempo real com base em cotações atualizadas.
+            Simples, rápido e confiável para o seu dia a dia.
+          </p>
+        </li>
+        <li>
+          <i class="fas fa-coins"></i>
+          <h3>Cotações Diversas</h3>
+          <p>
+            Compare o Real com Dólar, Euro, Libra e outras moedas do mundo.
+            Tenha sempre as taxas mais recentes ao seu alcance.
+          </p>
+        </li>
+        <li>
+          <i class="fas fa-chart-line"></i>
+          <h3>Transparência</h3>
+          <p>
+            Utilizamos APIs abertas e gratuitas para garantir informações atualizadas
+            e seguras. Sem pegadinhas, apenas dados reais do mercado.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="dark-section contact-container">
+      <h2>Fale conosco!</h2>
+      <p>Envie sua mensagem e logo entraremos em contato</p>
+      <form>
+        <input type="text" name="name" id="name" placeholder="Seu nome" required />
+        <input type="email" name="email" id="email" placeholder="Seu email" required />
+        <textarea name="message" id="message" placeholder="Descreva sua solicitação" required></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="dark-sectionSobre">
+      <h2 style="text-align: center;">Sobre</h2>
+      <p>
+        Este site foi criado como parte das aulas de Front-End, utilizando HTML, CSS e JavaScript simples.  
+        Nosso objetivo é demonstrar na prática como construir páginas modernas, funcionais e responsivas.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align: center; background-color: darkblue; color: azure; font-weight: bold; padding: 10px 10px;">&copy; 2025 - Página Desenvolvida no Curso de Programador FrontEnd no Senai Maracanã com prof. Anthony Freitas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
